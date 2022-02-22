@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--html file for Edit Operation -->
+
+<html>
+		<head>
+				<title>SmartPhone Record Management | Record_Added</title>
+				<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+		
+		</head>
+		
+		<body>
+				
+				<form method="POST" action="/update">
+				
+						<table>
+								<tr>
+											
+										<td><input type="hidden" name="rid" value="{{d.0}}"></td>
+								</tr>
+							
+								<tr>
+										<td>Brand Name</td>
+										<td><input type="text" name="brand_name" value="{{d.1}}"></td>
+								</tr>
+									
+								<tr>
+										<td>Model Name</td>
+										<td><input type="text" name="model" value="{{d.2}}"></td>
+								</tr>
+								
+								<tr>
+										<td>Old_Price</td>
+										<td><input type="text" name="old_price" value="{{d.3}}"></td>
+								</tr>
+								<tr>
+										<td>New_Price</td>
+										<td><input type="text" name="new_price" value="{{d.4}}"></td>
+								</tr>
+								<tr>
+										<td>Sales 2019</td>
+										<td><input type="text" name="sales_2019" value="{{d.5}}"></td>
+								</tr>
+								<tr>
+										<td>Sales 2020</td>
+										<td><input type="text" name="sales_2020" value="{{d.6}}"></td>
+								</tr>
+								<tr>
+										<td>Revenue</td>
+										<td><input type="text" name="revenue" value="{{d.7}}"></td>
+								</tr>
+									
+								<tr>
+										<td><input type="submit" name="send" value="Update"></td>
+								</tr>
+								
+						</table>
+						
+				</form>
+				
+		</body>
+
+</html>

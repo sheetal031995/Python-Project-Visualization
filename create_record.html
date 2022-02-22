@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--This html file is for creating new record-->
+
+<html>
+       <head>
+	          <title>SmartPhone Record Management | New Record Added</title>
+			  <!-- Bootstrap CSS -->
+			  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+	   
+	   </head>
+
+       <body>
+              <form method="POST" action="/store">
+			  
+			      <table>
+				            
+					       		 <tr>
+								       <td><u>Brand Name:</u></td>
+								       <td><input type="text"name="brand_name"></td>
+								 </tr>
+								 
+								 <tr>
+								       <td><u>Model Name:</u></td>
+								       <td><input type="text"name="model"></td>
+								 </tr>
+								 
+								       <td><u>Old Price:</u></td>
+								       <td><input type="text"name="old_price"></td>
+								 </tr>
+								 </tr>
+								 
+								       <td><u>New Price:</u></td>
+								       <td><input type="text"name="new_price"></td>
+								 </tr>
+								 </tr>
+								 
+								       <td><u>Sales 2019:</u></td>
+								       <td><input type="text"name="sales_2019"></td>
+								 </tr>
+								 </tr>
+								 
+								       <td><u>Sales 2020:</u></td>
+								       <td><input type="text"name="sales_2020"></td>
+								 </tr>
+								 </tr>
+								 
+								       <td><u>Revenue:</u></td>
+								       <td><input type="text"name="revenue"></td>
+								 </tr>
+                                 <tr>
+								      <td><input type="submit" name="send"value="Added"></td>
+								 </tr>
+					   </table>
+					  
+			   </form>			
+       </body>
+
+</html>	   
